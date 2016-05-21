@@ -5,11 +5,10 @@
 
 load 'bats-ansible/load'
 
-readonly container_name=ansible-firefox-addon
 readonly addon_url=https://addons.mozilla.org/en-US/firefox/addon/adblock-plus
 
 setup() {
-  container=$(container_startup $container_name 'alzadude/fedora-ansible-test:23')
+  container=$(container_startup fedora)
   hosts=$(tmp_file $(container_inventory $container))
   container_dnf_conf $container keepcache 1
   container_dnf_conf $container metadata_timer_sync 0
