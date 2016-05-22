@@ -76,5 +76,5 @@ setup() {
 }
 
 teardown() {
-  container_cleanup $container
+  container_cleanup
 }
