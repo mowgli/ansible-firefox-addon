@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-# dependencies of this test: bats, ansible, docker, grep
+# dependencies of this test: bats, ansible, docker
 # control machine requirements for module under test: ???
 
 load 'bats-ansible/load'
